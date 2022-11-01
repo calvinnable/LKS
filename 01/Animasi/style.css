@@ -1,0 +1,52 @@
+.merah {
+    background: #f63d3a;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+}
+
+.kuning {
+    background: #fda543;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+}
+
+.hijau {
+    background: #19a68c;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+}
+
+.biru {
+    background: #193b48;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+}
+  
+.animasi {
+    animation: loading 10s infinite;
+    height: 100px;
+    width: 100px;
+    margin: 200px auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+  
+  @keyframes loading {
+    25% {
+      transform: rotate(90deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(270deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
