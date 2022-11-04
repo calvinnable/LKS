@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 60%;
+            margin-left: 20%;
+        }
+        * {box-sizing: border-box;}
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        </style>
+    </head>
+<body>
+
+    
+<div class="container">
+    <h1><center>Contact Form</center></h1>
+            <label for="name">Nama</label>
+                <input type="text" id="fname" name="firstname" placeholder="masukkan nama">
+            <label for="alamat">Alamat</label>
+                <input type="text" id="lname" name="lastname" placeholder="masukkan alamat">
+
+                        <!-- <label for="country">Country</label>
+                        <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        </select> -->
+
+                    <label for="catatan">Catatan</label>
+                    <textarea id="catatan" name="catatan" placeholder="pesan" style="height:200px"></textarea>
+                <input type="submit" value="Submit">
+        </div>
+    </body>
+</html>
