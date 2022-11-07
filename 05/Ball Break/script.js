@@ -7,10 +7,10 @@ var ballY = 530;
 var ballSpeedY = 0;
 
 //paddle variables and constants
-const PADDLE_WIDTH = 100;
+const PADDLE_WIDTH = 1000;
 const PADDLE_HEIGHT = 10;
 const PADDLE_DIST_FROM_EDGE = 60;
-var paddleX = 350;
+var paddleX = 0;
 
 //mouse variables;
 var mouseX;
@@ -28,7 +28,7 @@ var bricksLeft = 0;
 //score variables
 var maximumScore = 0;
 var playerScore = 0;
-var attempts = 5;
+var attempts = 1;
 var playerAttempts = attempts;
 var showEndingScreen = false;
 
@@ -59,7 +59,7 @@ function handleMouseClick(evt) {
   }
 
   if(ballSpeedX == 0 && ballSpeedY == 0) {
-    ballSpeedX = 0;
+    ballSpeedX = 300;
     ballSpeedY = -5;
   }
 }
@@ -68,7 +68,7 @@ window.onload = function() {
   canvas = document.getElementById('gameCanvas');
   canvasContext = canvas.getContext('2d');
 
-  var framesPerSecond = 30;
+  var framesPerSecond = 80;
   setInterval(updateAll, 1000/framesPerSecond);
 
   canvas.addEventListener('mousedown', handleMouseClick);
